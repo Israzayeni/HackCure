@@ -29,7 +29,7 @@ in the original spec (1 cell, total 412) was abbreviated.
 
 | Method & path | Request | 200 response | Errors |
 |---|---|---|---|
-| `POST /images` | multipart/form-data, field `file` (PROPOSED) | `post_images_response.schema.json`: `{"image_id"}` or a quality rejection `{"accepted": false, "reason", "detail"}` | 400 `invalid_request` |
+| `POST /images` | multipart/form-data, field `file` (PROPOSED) | `post_images_response.schema.json`: `{"image_id"}` or a quality rejection `{"accepted": false, "reason", "detail"}` | 422 `invalid_request` |
 | `POST /analyze/{image_id}` | `analyze_request.schema.json`: `{"dilution_factor"}` (PROPOSED) | `result.schema.json` | 404 `image_not_found`, 422 `invalid_request`, 500 `analysis_failed`, 503 `models_not_loaded` |
 | `GET /health` | — | `health.schema.json` (PROPOSED) | — |
 
@@ -54,5 +54,5 @@ The cases API uses the DB column names (`concentration`, `cells` for `cells_json
 ## Errors (both services, PROPOSED)
 
 Every 4xx/5xx body is `error.schema.json`: `{"error": {"code": "...", "message": "..."}}`. A failed analysis returns
-this body, never a partial result. Known codes: `invalid_request`, `image_not_found`, `analysis_failed`,
+this body, never a partial result. Known codes: `invalid_request`, `not_found` (unknown route), `image_not_found`, `analysis_failed`,
 `models_not_loaded`, `sample_not_found`, `invalid_status`, `no_result`, `not_validated`. Add new codes through a contract PR.
