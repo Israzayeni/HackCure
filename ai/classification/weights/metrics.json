@@ -1,0 +1,28 @@
+{
+  "weights": "/content/drive/MyDrive/hackcure/best.pt",
+  "data": "/content/Leukemia-Cells-1/test",
+  "n": 353,
+  "n_abnormal": 244,
+  "threshold": 0.25,
+  "accuracy": 0.847,
+  "f1_abnormal": 0.8933,
+  "precision_abnormal": 0.8626,
+  "recall_abnormal": 0.9262,
+  "f1_macro": 0.8116,
+  "confusion_matrix": {
+    "rows_true_cols_pred": [
+      "normal",
+      "abnormal"
+    ],
+    "values": [
+      [
+        73,
+        36
+      ],
+      [
+        18,
+        226
+      ]
+    ]
+  }
+}
