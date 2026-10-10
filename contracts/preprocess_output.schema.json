@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/preprocess_output.schema.json",
+  "title": "PreprocessOutput",
+  "description": "JSON form of preprocess() output. preprocess() returns all rectangles to be counted. The in-memory np.ndarray 'image' is serialized as the relative path of the image file (PROPOSED — confirm with team).",
+  "type": "object",
+  "required": [
+    "image",
+    "rectangles"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "image": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rectangles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "rectangle.schema.json"
+      }
+    }
+  }
+}

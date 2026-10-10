@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/classified_cells.schema.json",
+  "title": "ClassifiedCells",
+  "description": "The 'cells' argument of compute_result(): each detection paired with its classification (PROPOSED — confirm with team).",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "detection",
+      "classification"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "detection": {
+        "$ref": "detection.schema.json"
+      },
+      "classification": {
+        "$ref": "classification.schema.json"
+      }
+    }
+  }
+}

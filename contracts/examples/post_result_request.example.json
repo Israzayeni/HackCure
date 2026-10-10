@@ -1,0 +1,50 @@
+{
+  "image_id": "img_7f3a9c21e4b0",
+  "model_version": "fake-0.1",
+  "result": {
+    "cells": [
+      {
+        "x": 158,
+        "y": 288,
+        "label": "normal",
+        "score": 0.94
+      },
+      {
+        "x": 208,
+        "y": 308,
+        "label": "normal",
+        "score": 0.91
+      },
+      {
+        "x": 248,
+        "y": 358,
+        "label": "normal",
+        "score": 0.88
+      },
+      {
+        "x": 311,
+        "y": 296,
+        "label": "abnormal",
+        "score": 0.82
+      },
+      {
+        "x": 338,
+        "y": 338,
+        "label": "normal",
+        "score": 0.97
+      },
+      {
+        "x": 298,
+        "y": 368,
+        "label": "normal",
+        "score": 0.9
+      }
+    ],
+    "rectangles_counted": 2,
+    "total_count": 6,
+    "abnormal_count": 1,
+    "dilution_factor": 10,
+    "concentration_per_uL": 3000.0,
+    "confidence": 0.9
+  }
+}

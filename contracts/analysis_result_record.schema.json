@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/analysis_result_record.schema.json",
+  "title": "AnalysisResultRecord",
+  "description": "A row of the analysis_results table as returned by the cases API. Field names follow the DB columns: 'concentration' = result.concentration_per_uL, 'cells' = column cells_json. dilution_factor lives on the sample.",
+  "type": "object",
+  "required": [
+    "id",
+    "image_id",
+    "total_count",
+    "abnormal_count",
+    "rectangles_counted",
+    "concentration",
+    "confidence",
+    "cells",
+    "model_version"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "image_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "total_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "abnormal_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rectangles_counted": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "concentration": {
+      "type": "number",
+      "minimum": 0
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "cells": {
+      "type": "array",
+      "items": {
+        "$ref": "result.schema.json#/$defs/cell"
+      }
+    },
+    "model_version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  }
+}

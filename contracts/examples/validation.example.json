@@ -1,0 +1,9 @@
+{
+  "id": "c7d8e9f0-a1b2-4c3d-8e4f-5a6b7c8d9e0f",
+  "sample_id": "3f1c2a9e-7b4d-4e2a-9c1f-0a1b2c3d4e5f",
+  "corrected_count": 7,
+  "corrected_abnormal": 1,
+  "validator": "expert_01",
+  "comment": "One cell hidden under debris.",
+  "validated_at": "2026-10-10T10:02:00Z"
+}

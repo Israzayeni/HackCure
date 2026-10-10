@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/image_record.schema.json",
+  "title": "ImageRecord",
+  "description": "A row of the images table. id is the inference service's image_id (PROPOSED — confirm with team). file_path may be null because only the inference service knows where it stored the file (PROPOSED — confirm with team).",
+  "type": "object",
+  "required": [
+    "id",
+    "sample_id",
+    "file_path",
+    "quality_ok",
+    "rejection_reason",
+    "uploaded_at"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sample_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "file_path": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "quality_ok": {
+      "type": "boolean"
+    },
+    "rejection_reason": {
+      "anyOf": [
+        {
+          "enum": [
+            "blurry",
+            "too_dark",
+            "overexposed"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "uploaded_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

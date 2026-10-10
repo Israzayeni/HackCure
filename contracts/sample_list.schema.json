@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/sample_list.schema.json",
+  "title": "SampleList",
+  "description": "Response of cases GET /samples.",
+  "type": "array",
+  "items": {
+    "$ref": "sample.schema.json"
+  }
+}

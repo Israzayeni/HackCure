@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/post_images_response.schema.json",
+  "title": "PostImagesResponse",
+  "description": "Response of inference POST /images (multipart/form-data, field 'file'). Either the image is accepted and gets an image_id, or the quality check rejects it. Both are HTTP 200 (PROPOSED — confirm with team).",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/accepted"
+    },
+    {
+      "$ref": "#/$defs/rejected"
+    }
+  ],
+  "$defs": {
+    "accepted": {
+      "type": "object",
+      "required": [
+        "image_id"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "image_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "rejected": {
+      "description": "Quality rejection (PROPOSED — confirm with team).",
+      "type": "object",
+      "required": [
+        "accepted",
+        "reason",
+        "detail"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "accepted": {
+          "const": false
+        },
+        "reason": {
+          "enum": [
+            "blurry",
+            "too_dark",
+            "overexposed"
+          ]
+        },
+        "detail": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

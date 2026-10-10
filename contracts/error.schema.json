@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/error.schema.json",
+  "title": "Error",
+  "description": "The single error body that both services use for every 4xx/5xx response. A failed analysis returns this, never a partial result (PROPOSED — confirm with team). Codes are listed in contracts/README.md.",
+  "type": "object",
+  "required": [
+    "error"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "error": {
+      "type": "object",
+      "required": [
+        "code",
+        "message"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "type": "string",
+          "pattern": "^[a-z][a-z_]*$"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

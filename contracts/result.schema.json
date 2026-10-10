@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/result.schema.json",
+  "title": "AnalysisResult",
+  "description": "Returned by compute_result() and by inference POST /analyze/{image_id}. 'cells' holds only the cells counted after the border rule, so total_count == len(cells) and abnormal_count == number of cells labelled 'abnormal'. concentration_per_uL = total_count / rectangles_counted * 100 * dilution_factor (Malassez: 100 rectangles = 1 uL), rounded to 2 decimals. confidence = mean of cells[].score rounded to 2 decimals, 0 if no cells (PROPOSED — confirm with team).",
+  "type": "object",
+  "required": [
+    "cells",
+    "rectangles_counted",
+    "total_count",
+    "abnormal_count",
+    "dilution_factor",
+    "concentration_per_uL",
+    "confidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "cells": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/cell"
+      }
+    },
+    "rectangles_counted": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "total_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "abnormal_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "dilution_factor": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "concentration_per_uL": {
+      "type": "number",
+      "minimum": 0
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "$defs": {
+    "cell": {
+      "description": "A counted cell. x, y = centre of its detection box in preprocessed-image pixels (x + w // 2, y + h // 2); label and score come from classify_cell (PROPOSED — confirm with team).",
+      "type": "object",
+      "required": [
+        "x",
+        "y",
+        "label",
+        "score"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "x": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "y": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "label": {
+          "enum": [
+            "normal",
+            "abnormal"
+          ]
+        },
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  }
+}
