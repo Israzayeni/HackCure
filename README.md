@@ -88,6 +88,42 @@ name contains `blurry`, `dark` or `overexposed` returns a quality rejection. A n
 image whose `/analyze` returns 500 `analysis_failed`. Use 127.0.0.1 rather than `localhost`, or change `--port`,
 if another program already uses port 8001.
 
+### Fake data for M3 (classification)
+
+Ready-made labelled crops, so M3 can write and test data loading, training and evaluation code before the real
+detector exists. Nothing needs to run first:
+
+```python
+from torchvision.datasets import ImageFolder
+ds = ImageFolder("fakes/crops")      # 120 RGB crops 224×224; classes {'abnormal': 0, 'normal': 1}
+```
+
+| File | What |
+|---|---|
+| `fakes/images/fake_cells.png` | 1024×1024 RGB image, as if it came out of `preprocess()`: light background, grid, 120 non-overlapping cells. 96 are "normal" (small, round, dark) and 24 "abnormal" (bigger rotated ellipse with a bump, orange). 6 cells hug the image border, to exercise the crop padding |
+| `fakes/json/fake_cells.detections.json` | Exactly the `detect_cells()` contract (`detections.schema.json`): `[{"x", "y", "w", "h", "score"}]`, no labels and no id. A cell's id is its index in this list |
+| `fakes/json/fake_cells.labels.json` | True label per detection, **same order** as the detections: `[{"label": "normal" \| "abnormal"}]` |
+| `fakes/crops/normal/`, `fakes/crops/abnormal/` | `crop_cell()` output for every cell, as `cell_<id:04d>.png` |
+| `fakes/crops/labels.csv` | `crop_path` (relative to `fakes/crops/`), `cell_id`, `label`, `x`, `y`, `w`, `h` |
+| `fakes/images/fake_cells_overlay.png` | Every box drawn: green = normal, red = abnormal |
+| `ai/common/crop.py` | Shared helpers `crop_cell`, `export_crops`, `draw_labeled_overlay` (signatures also in `contracts/interfaces.py`) |
+
+> ⚠️ **The drawn cells are for testing code only.** Never train a model you will use on them, and never report
+> accuracy or F1 measured on them. Real metrics come from the real dataset's held-out split.
+
+Regenerate (deterministic, overwrites only the files above): `python fakes/generate_fake_cells.py`. Then run
+`python fakes/validate_fakes.py`, which checks one label per detection, that every crop in `labels.csv` exists
+and is 224×224 RGB, and that the counts per class match `fake_cells.labels.json`.
+
+Open questions for this data:
+- **Box format:** `x, y` = top-left corner, plus `w, h`. This is already fixed by `contracts/detection.schema.json`, so it is not an open question.
+- **PROPOSED — M3 confirms:** crop size 224 and margin 0.25. The side of the square crop is `max(w, h) × 1.5`, with replicate padding at image edges.
+- **PROPOSED — needs a contract PR:** who does the cropping in the real pipeline. The proposal is M3's stage, via
+  `ai/common/crop.py`. The current contract (`interfaces.py`) still says `classify_cell` receives the exact box
+  `image[y:y+h, x:x+w]`, and `fakes/stubs.py` relies on that. A classifier trained on `crop_cell` crops (with
+  margin, 224×224) would see differently framed inputs at inference until this is settled. Options: change the contract
+  so M4 passes `crop_cell(image, det)`, or train on exact-box crops.
+
 ## 6. Integration plan (H7)
 
 Swap one stage at a time, in this order. After each swap, run the checklist before moving on. If a step fails,
@@ -193,3 +229,4 @@ Every item below is a choice made to fill a gap in the original spec. **PROPOSED
 25. The spec says "3 images, including one blurry and one dark", which would leave one usable image. The fakes have 3 good images plus 2 quality-test images (blurry and dark copies of `malassez_01`).
 26. `golden_set/manual_counts.csv` format (see `golden_set/README.md`).
 27. The repo was empty, so `main` got one empty "Initial commit" as the PR base.
+28. M3 fake data: crop size 224 and margin 0.25, and who does the cropping in the real pipeline (exact-box crop in the contract vs `crop_cell`). See "Fake data for M3" in §5.

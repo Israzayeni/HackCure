@@ -12,9 +12,11 @@ Everything here is generated, mutually consistent, and committed. You don't need
 | `json/<name>.result.json` | Full result JSON, with border rule applied and formula-consistent | M2, M4, M5 |
 | `json/samples.json` | 5 cases-service records (`sample_detail` shape) covering pending, corrected, validated | M5 |
 | `json/rejection_examples.json` | One quality rejection per reason | M4, M5, dashboard |
+| `images/fake_cells.png`, `json/fake_cells.detections.json`, `json/fake_cells.labels.json`, `crops/`, `images/fake_cells_overlay.png` | Labelled cells and 224×224 crops in `ImageFolder` layout (see root README, "Fake data for M3"). Testing code only, never for training or metrics | M3 |
 | `stubs.py` | `fake_preprocess`, `fake_detect_cells`, `fake_classify_cell`, `fake_compute_result`, `fake_analyze`: same signatures as `contracts/interfaces.py` | M4 (and anyone needing an upstream stage) |
 | `mock_inference/` | FastAPI mock of the inference service, serving these JSONs | M5, dashboard |
-| `generate_fakes.py` | Regenerates everything above (fixed seed, deterministic) | whoever changes the fakes |
+| `generate_fake_cells.py` | Regenerates the `fake_cells` files and `crops/` (fixed seed) | whoever changes the M3 fakes |
+| `generate_fakes.py` | Regenerates the `malassez_*` images and JSON, `samples.json`, `rejection_examples.json` (fixed seed, deterministic) | whoever changes the fakes |
 | `validate_fakes.py` | Checks all fakes and contract examples against the schemas and the formula | everyone, before pushing a contract change |
 
 ```bash
