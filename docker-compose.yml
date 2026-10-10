@@ -1,0 +1,43 @@
+# SKELETON ONLY: no real services are wired yet.
+# Each owner un-comments and fills in their own block on their branch, then opens a PR.
+# Ports below are suggestions (PROPOSED — confirm with team).
+#
+# Until H7, M5 and the dashboard use the mock inference server instead of `inference`:
+#   python -m uvicorn --app-dir fakes/mock_inference app:app --port 8001
+
+services: {}
+
+#  gateway:                      # Nginx: routes /api/inference/* and /api/cases/* (dashboard owner)
+#    image: nginx:1.27-alpine
+#    ports: ["8080:80"]
+#    volumes: ["./gateway/nginx.conf:/etc/nginx/conf.d/default.conf:ro"]
+#    depends_on: [inference, cases, dashboard]
+#
+#  dashboard:                    # React (dashboard owner)
+#    build: ./dashboard
+#
+#  inference:                    # FastAPI, M4 (Yasmine): runs M1 -> M2 -> M3
+#    build: ./services/inference
+#    ports: ["8001:8001"]
+#    volumes: ["./models:/models:ro"]       # trained weights from M2 / M3, never committed
+#
+#  cases:                        # ASP.NET Core + QuestPDF, M5 (Eya)
+#    build: ./services/cases
+#    ports: ["8002:8080"]
+#    environment:
+#      ConnectionStrings__Default: "Host=db;Database=hackcure;Username=hackcure;Password=${DB_PASSWORD}"
+#      Inference__BaseUrl: "http://inference:8001"
+#    depends_on: [db]
+#
+#  db:                           # PostgreSQL, M5 (Eya)
+#    image: postgres:16-alpine
+#    environment:
+#      POSTGRES_DB: hackcure
+#      POSTGRES_USER: hackcure
+#      POSTGRES_PASSWORD: ${DB_PASSWORD}
+#    volumes:
+#      - ./contracts/db_schema.sql:/docker-entrypoint-initdb.d/001_schema.sql:ro
+#      - pgdata:/var/lib/postgresql/data
+#
+#volumes:
+#  pgdata:
