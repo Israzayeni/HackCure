@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/post_result_request.schema.json",
+  "title": "PostResultRequest",
+  "description": "Body of cases POST /samples/{id}/result: the inference result for one accepted image of this sample. model_version is here because the result JSON has none (PROPOSED — confirm with team).",
+  "type": "object",
+  "required": [
+    "image_id",
+    "model_version",
+    "result"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "image_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "result": {
+      "$ref": "result.schema.json"
+    }
+  }
+}

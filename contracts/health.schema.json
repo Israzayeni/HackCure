@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/health.schema.json",
+  "title": "Health",
+  "description": "Inference GET /health (PROPOSED — confirm with team).",
+  "type": "object",
+  "required": [
+    "status",
+    "models_loaded"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "status": {
+      "const": "ok"
+    },
+    "models_loaded": {
+      "type": "boolean"
+    }
+  }
+}

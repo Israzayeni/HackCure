@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/analyze_request.schema.json",
+  "title": "AnalyzeRequest",
+  "description": "JSON body of inference POST /analyze/{image_id}. The spec does not say where compute_result gets the dilution, so it is passed here (PROPOSED — confirm with team).",
+  "type": "object",
+  "required": [
+    "dilution_factor"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "dilution_factor": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    }
+  }
+}

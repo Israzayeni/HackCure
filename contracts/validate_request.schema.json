@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/validate_request.schema.json",
+  "title": "ValidateRequest",
+  "description": "Body of cases POST /samples/{id}/validate.",
+  "type": "object",
+  "required": [
+    "validator"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "validator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "comment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "label": "normal",
+    "score": 0.94
+  },
+  {
+    "label": "normal",
+    "score": 0.91
+  },
+  {
+    "label": "normal",
+    "score": 0.88
+  },
+  {
+    "label": "abnormal",
+    "score": 0.82
+  },
+  {
+    "label": "normal",
+    "score": 0.97
+  },
+  {
+    "label": "normal",
+    "score": 0.9
+  },
+  {
+    "label": "normal",
+    "score": 0.93
+  }
+]

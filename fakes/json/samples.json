@@ -1,0 +1,4713 @@
+[
+  {
+    "sample": {
+      "id": "bea3e734-5ada-43d0-ad32-ec334e4ba92d",
+      "code": "S-20261010-001",
+      "created_at": "2026-10-10T09:00:00Z",
+      "dilution_factor": 10,
+      "technician": "tech_01",
+      "status": "pending"
+    },
+    "images": [],
+    "result": null,
+    "validation": null
+  },
+  {
+    "sample": {
+      "id": "72bb922d-f3a0-49b0-8c42-a7bdb2449f9c",
+      "code": "S-20261010-002",
+      "created_at": "2026-10-10T10:00:00Z",
+      "dilution_factor": 10,
+      "technician": "tech_01",
+      "status": "pending"
+    },
+    "images": [
+      {
+        "id": "img_2c17ffdc0913",
+        "sample_id": "72bb922d-f3a0-49b0-8c42-a7bdb2449f9c",
+        "file_path": null,
+        "quality_ok": true,
+        "rejection_reason": null,
+        "uploaded_at": "2026-10-10T10:05:00Z"
+      }
+    ],
+    "result": {
+      "id": "838a61fb-a1a2-4814-a28b-e0ae7d2099ce",
+      "image_id": "img_2c17ffdc0913",
+      "total_count": 181,
+      "abnormal_count": 10,
+      "rectangles_counted": 20,
+      "concentration": 9050.0,
+      "confidence": 0.89,
+      "cells": [
+        {
+          "x": 366,
+          "y": 272,
+          "label": "abnormal",
+          "score": 0.92
+        },
+        {
+          "x": 174,
+          "y": 272,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 490,
+          "y": 272,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 419,
+          "y": 287,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 319,
+          "y": 287,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 219,
+          "y": 290,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 560,
+          "y": 289,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 520,
+          "y": 290,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 163,
+          "y": 293,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 710,
+          "y": 293,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 776,
+          "y": 296,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 355,
+          "y": 297,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 494,
+          "y": 299,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 677,
+          "y": 298,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 399,
+          "y": 299,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 634,
+          "y": 304,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 544,
+          "y": 309,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 749,
+          "y": 310,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 809,
+          "y": 318,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 456,
+          "y": 323,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 233,
+          "y": 322,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 213,
+          "y": 325,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 483,
+          "y": 325,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 337,
+          "y": 328,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 875,
+          "y": 332,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 409,
+          "y": 336,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 310,
+          "y": 337,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 377,
+          "y": 338,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 191,
+          "y": 341,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 693,
+          "y": 342,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 156,
+          "y": 342,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 506,
+          "y": 346,
+          "label": "abnormal",
+          "score": 0.77
+        },
+        {
+          "x": 717,
+          "y": 342,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 762,
+          "y": 350,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 842,
+          "y": 351,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 608,
+          "y": 353,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 633,
+          "y": 359,
+          "label": "abnormal",
+          "score": 0.76
+        },
+        {
+          "x": 553,
+          "y": 367,
+          "label": "abnormal",
+          "score": 0.7
+        },
+        {
+          "x": 685,
+          "y": 364,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 181,
+          "y": 364,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 587,
+          "y": 366,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 869,
+          "y": 367,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 333,
+          "y": 370,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 497,
+          "y": 372,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 354,
+          "y": 378,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 531,
+          "y": 377,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 248,
+          "y": 380,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 402,
+          "y": 405,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 202,
+          "y": 405,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 359,
+          "y": 406,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 262,
+          "y": 406,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 839,
+          "y": 408,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 758,
+          "y": 415,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 716,
+          "y": 417,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 507,
+          "y": 417,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 628,
+          "y": 420,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 378,
+          "y": 424,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 350,
+          "y": 425,
+          "label": "abnormal",
+          "score": 0.7
+        },
+        {
+          "x": 160,
+          "y": 426,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 275,
+          "y": 430,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 409,
+          "y": 434,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 324,
+          "y": 437,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 473,
+          "y": 438,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 546,
+          "y": 439,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 520,
+          "y": 440,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 680,
+          "y": 446,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 572,
+          "y": 446,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 859,
+          "y": 447,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 236,
+          "y": 448,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 788,
+          "y": 447,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 753,
+          "y": 457,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 271,
+          "y": 458,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 656,
+          "y": 461,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 365,
+          "y": 461,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 407,
+          "y": 463,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 689,
+          "y": 466,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 804,
+          "y": 468,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 246,
+          "y": 473,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 177,
+          "y": 475,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 301,
+          "y": 473,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 149,
+          "y": 478,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 494,
+          "y": 479,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 333,
+          "y": 480,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 616,
+          "y": 482,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 463,
+          "y": 483,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 872,
+          "y": 486,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 403,
+          "y": 488,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 699,
+          "y": 492,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 362,
+          "y": 493,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 437,
+          "y": 493,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 241,
+          "y": 495,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 654,
+          "y": 497,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 604,
+          "y": 512,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 863,
+          "y": 512,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 692,
+          "y": 525,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 737,
+          "y": 528,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 173,
+          "y": 528,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 566,
+          "y": 528,
+          "label": "abnormal",
+          "score": 0.87
+        },
+        {
+          "x": 422,
+          "y": 534,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 246,
+          "y": 538,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 607,
+          "y": 539,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 316,
+          "y": 540,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 378,
+          "y": 542,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 511,
+          "y": 542,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 820,
+          "y": 543,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 137,
+          "y": 548,
+          "label": "abnormal",
+          "score": 0.8
+        },
+        {
+          "x": 646,
+          "y": 552,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 715,
+          "y": 560,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 453,
+          "y": 562,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 795,
+          "y": 565,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 476,
+          "y": 570,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 333,
+          "y": 572,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 824,
+          "y": 573,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 549,
+          "y": 575,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 658,
+          "y": 576,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 193,
+          "y": 575,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 523,
+          "y": 578,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 752,
+          "y": 581,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 245,
+          "y": 583,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 618,
+          "y": 581,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 302,
+          "y": 587,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 150,
+          "y": 589,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 499,
+          "y": 591,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 724,
+          "y": 592,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 390,
+          "y": 593,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 838,
+          "y": 592,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 183,
+          "y": 596,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 546,
+          "y": 597,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 327,
+          "y": 600,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 612,
+          "y": 606,
+          "label": "abnormal",
+          "score": 0.77
+        },
+        {
+          "x": 669,
+          "y": 611,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 224,
+          "y": 610,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 472,
+          "y": 612,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 508,
+          "y": 611,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 269,
+          "y": 618,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 698,
+          "y": 617,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 860,
+          "y": 617,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 533,
+          "y": 618,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 235,
+          "y": 645,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 491,
+          "y": 645,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 860,
+          "y": 648,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 186,
+          "y": 648,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 809,
+          "y": 651,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 326,
+          "y": 653,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 359,
+          "y": 657,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 587,
+          "y": 660,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 405,
+          "y": 661,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 764,
+          "y": 662,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 621,
+          "y": 666,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 678,
+          "y": 669,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 462,
+          "y": 668,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 153,
+          "y": 669,
+          "label": "abnormal",
+          "score": 0.66
+        },
+        {
+          "x": 527,
+          "y": 673,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 272,
+          "y": 675,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 498,
+          "y": 679,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 355,
+          "y": 678,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 558,
+          "y": 681,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 378,
+          "y": 682,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 758,
+          "y": 682,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 867,
+          "y": 687,
+          "label": "abnormal",
+          "score": 0.8
+        },
+        {
+          "x": 651,
+          "y": 690,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 422,
+          "y": 696,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 460,
+          "y": 700,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 177,
+          "y": 704,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 547,
+          "y": 706,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 238,
+          "y": 706,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 326,
+          "y": 718,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 348,
+          "y": 719,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 368,
+          "y": 717,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 623,
+          "y": 719,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 489,
+          "y": 718,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 681,
+          "y": 725,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 652,
+          "y": 726,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 716,
+          "y": 727,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 468,
+          "y": 728,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 842,
+          "y": 729,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 159,
+          "y": 730,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 388,
+          "y": 733,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 601,
+          "y": 733,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 542,
+          "y": 739,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 412,
+          "y": 739,
+          "label": "normal",
+          "score": 0.98
+        }
+      ],
+      "model_version": "fake-0.1"
+    },
+    "validation": null
+  },
+  {
+    "sample": {
+      "id": "d27c147c-9b80-41b4-ad52-df3e5e13a7dd",
+      "code": "S-20261010-003",
+      "created_at": "2026-10-10T11:00:00Z",
+      "dilution_factor": 20,
+      "technician": "tech_02",
+      "status": "corrected"
+    },
+    "images": [
+      {
+        "id": "img_def00ecd81dd",
+        "sample_id": "d27c147c-9b80-41b4-ad52-df3e5e13a7dd",
+        "file_path": null,
+        "quality_ok": true,
+        "rejection_reason": null,
+        "uploaded_at": "2026-10-10T11:05:00Z"
+      }
+    ],
+    "result": {
+      "id": "1c6397ea-ded9-4718-a883-bd39e5131b38",
+      "image_id": "img_def00ecd81dd",
+      "total_count": 272,
+      "abnormal_count": 8,
+      "rectangles_counted": 20,
+      "concentration": 27200.0,
+      "confidence": 0.89,
+      "cells": [
+        {
+          "x": 545,
+          "y": 272,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 240,
+          "y": 285,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 175,
+          "y": 287,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 148,
+          "y": 286,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 325,
+          "y": 286,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 639,
+          "y": 286,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 495,
+          "y": 291,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 693,
+          "y": 289,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 455,
+          "y": 292,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 218,
+          "y": 293,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 525,
+          "y": 293,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 737,
+          "y": 293,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 758,
+          "y": 294,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 567,
+          "y": 296,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 820,
+          "y": 296,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 260,
+          "y": 297,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 604,
+          "y": 300,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 545,
+          "y": 302,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 409,
+          "y": 302,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 787,
+          "y": 304,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 848,
+          "y": 302,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 376,
+          "y": 306,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 645,
+          "y": 304,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 626,
+          "y": 306,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 334,
+          "y": 309,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 193,
+          "y": 311,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 475,
+          "y": 309,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 721,
+          "y": 314,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 606,
+          "y": 320,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 760,
+          "y": 319,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 253,
+          "y": 323,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 400,
+          "y": 322,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 561,
+          "y": 322,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 682,
+          "y": 323,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 169,
+          "y": 324,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 300,
+          "y": 324,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 227,
+          "y": 326,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 643,
+          "y": 326,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 852,
+          "y": 327,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 533,
+          "y": 329,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 348,
+          "y": 331,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 454,
+          "y": 330,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 820,
+          "y": 331,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 379,
+          "y": 334,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 481,
+          "y": 333,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 200,
+          "y": 335,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 275,
+          "y": 335,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 507,
+          "y": 338,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 620,
+          "y": 341,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 182,
+          "y": 349,
+          "label": "abnormal",
+          "score": 0.94
+        },
+        {
+          "x": 156,
+          "y": 349,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 779,
+          "y": 348,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 680,
+          "y": 349,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 752,
+          "y": 350,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 348,
+          "y": 354,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 704,
+          "y": 355,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 421,
+          "y": 357,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 319,
+          "y": 359,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 523,
+          "y": 358,
+          "label": "abnormal",
+          "score": 0.84
+        },
+        {
+          "x": 570,
+          "y": 361,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 248,
+          "y": 362,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 626,
+          "y": 365,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 458,
+          "y": 365,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 816,
+          "y": 366,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 874,
+          "y": 366,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 212,
+          "y": 369,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 840,
+          "y": 368,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 162,
+          "y": 370,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 657,
+          "y": 373,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 365,
+          "y": 377,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 389,
+          "y": 376,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 490,
+          "y": 376,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 699,
+          "y": 375,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 721,
+          "y": 377,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 783,
+          "y": 377,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 526,
+          "y": 378,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 160,
+          "y": 392,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 333,
+          "y": 392,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 755,
+          "y": 392,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 510,
+          "y": 407,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 817,
+          "y": 406,
+          "label": "abnormal",
+          "score": 0.85
+        },
+        {
+          "x": 543,
+          "y": 408,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 625,
+          "y": 409,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 181,
+          "y": 411,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 688,
+          "y": 412,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 754,
+          "y": 414,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 846,
+          "y": 412,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 330,
+          "y": 417,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 211,
+          "y": 421,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 237,
+          "y": 425,
+          "label": "abnormal",
+          "score": 0.74
+        },
+        {
+          "x": 414,
+          "y": 421,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 872,
+          "y": 422,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 359,
+          "y": 423,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 712,
+          "y": 424,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 803,
+          "y": 427,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 496,
+          "y": 429,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 260,
+          "y": 430,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 623,
+          "y": 432,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 845,
+          "y": 436,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 599,
+          "y": 436,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 677,
+          "y": 437,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 769,
+          "y": 438,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 157,
+          "y": 437,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 300,
+          "y": 440,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 385,
+          "y": 438,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 338,
+          "y": 443,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 643,
+          "y": 441,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 217,
+          "y": 443,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 718,
+          "y": 443,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 558,
+          "y": 444,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 274,
+          "y": 450,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 523,
+          "y": 456,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 391,
+          "y": 458,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 194,
+          "y": 459,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 616,
+          "y": 458,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 802,
+          "y": 460,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 165,
+          "y": 461,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 415,
+          "y": 461,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 504,
+          "y": 459,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 451,
+          "y": 462,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 363,
+          "y": 462,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 753,
+          "y": 462,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 665,
+          "y": 463,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 847,
+          "y": 464,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 709,
+          "y": 469,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 772,
+          "y": 468,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 226,
+          "y": 470,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 320,
+          "y": 470,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 551,
+          "y": 474,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 263,
+          "y": 481,
+          "label": "abnormal",
+          "score": 0.84
+        },
+        {
+          "x": 872,
+          "y": 484,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 199,
+          "y": 485,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 757,
+          "y": 488,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 844,
+          "y": 491,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 659,
+          "y": 491,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 495,
+          "y": 493,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 460,
+          "y": 495,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 617,
+          "y": 493,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 156,
+          "y": 497,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 559,
+          "y": 498,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 807,
+          "y": 496,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 708,
+          "y": 499,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 184,
+          "y": 512,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 380,
+          "y": 525,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 605,
+          "y": 524,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 711,
+          "y": 523,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 265,
+          "y": 525,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 437,
+          "y": 526,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 312,
+          "y": 530,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 351,
+          "y": 528,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 150,
+          "y": 530,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 508,
+          "y": 532,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 642,
+          "y": 533,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 670,
+          "y": 533,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 183,
+          "y": 534,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 459,
+          "y": 535,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 860,
+          "y": 539,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 791,
+          "y": 543,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 816,
+          "y": 545,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 761,
+          "y": 546,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 348,
+          "y": 549,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 536,
+          "y": 547,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 839,
+          "y": 547,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 233,
+          "y": 549,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 700,
+          "y": 551,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 137,
+          "y": 551,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 262,
+          "y": 553,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 421,
+          "y": 554,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 176,
+          "y": 556,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 199,
+          "y": 559,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 398,
+          "y": 561,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 510,
+          "y": 561,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 864,
+          "y": 562,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 617,
+          "y": 564,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 566,
+          "y": 565,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 793,
+          "y": 566,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 649,
+          "y": 574,
+          "label": "abnormal",
+          "score": 0.69
+        },
+        {
+          "x": 327,
+          "y": 573,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 680,
+          "y": 577,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 222,
+          "y": 580,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 761,
+          "y": 583,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 825,
+          "y": 582,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 530,
+          "y": 584,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 243,
+          "y": 585,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 723,
+          "y": 586,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 407,
+          "y": 585,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 615,
+          "y": 585,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 300,
+          "y": 589,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 476,
+          "y": 588,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 568,
+          "y": 587,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 863,
+          "y": 590,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 184,
+          "y": 593,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 365,
+          "y": 597,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 137,
+          "y": 598,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 325,
+          "y": 599,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 670,
+          "y": 602,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 426,
+          "y": 601,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 602,
+          "y": 605,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 214,
+          "y": 605,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 786,
+          "y": 606,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 694,
+          "y": 608,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 567,
+          "y": 608,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 815,
+          "y": 610,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 721,
+          "y": 609,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 300,
+          "y": 612,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 843,
+          "y": 616,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 403,
+          "y": 615,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 866,
+          "y": 619,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 508,
+          "y": 619,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 633,
+          "y": 618,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 463,
+          "y": 646,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 863,
+          "y": 647,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 623,
+          "y": 648,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 170,
+          "y": 649,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 486,
+          "y": 648,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 215,
+          "y": 649,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 571,
+          "y": 649,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 775,
+          "y": 650,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 538,
+          "y": 655,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 149,
+          "y": 656,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 315,
+          "y": 656,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 711,
+          "y": 657,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 193,
+          "y": 658,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 419,
+          "y": 658,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 335,
+          "y": 660,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 392,
+          "y": 662,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 241,
+          "y": 663,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 369,
+          "y": 663,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 669,
+          "y": 664,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 752,
+          "y": 667,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 804,
+          "y": 668,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 454,
+          "y": 674,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 833,
+          "y": 675,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 866,
+          "y": 677,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 263,
+          "y": 682,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 160,
+          "y": 681,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 784,
+          "y": 683,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 314,
+          "y": 682,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 365,
+          "y": 687,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 413,
+          "y": 688,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 630,
+          "y": 692,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 217,
+          "y": 691,
+          "label": "abnormal",
+          "score": 0.72
+        },
+        {
+          "x": 704,
+          "y": 693,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 571,
+          "y": 694,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 845,
+          "y": 694,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 670,
+          "y": 697,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 550,
+          "y": 698,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 172,
+          "y": 699,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 333,
+          "y": 704,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 818,
+          "y": 705,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 251,
+          "y": 707,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 405,
+          "y": 713,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 632,
+          "y": 714,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 308,
+          "y": 717,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 758,
+          "y": 717,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 168,
+          "y": 719,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 530,
+          "y": 719,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 199,
+          "y": 719,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 779,
+          "y": 721,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 800,
+          "y": 724,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 464,
+          "y": 730,
+          "label": "abnormal",
+          "score": 0.76
+        },
+        {
+          "x": 705,
+          "y": 729,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 218,
+          "y": 728,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 366,
+          "y": 730,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 137,
+          "y": 732,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 263,
+          "y": 732,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 506,
+          "y": 732,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 627,
+          "y": 734,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 332,
+          "y": 736,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 825,
+          "y": 737,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 601,
+          "y": 736,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 198,
+          "y": 740,
+          "label": "normal",
+          "score": 0.98
+        }
+      ],
+      "model_version": "fake-0.1"
+    },
+    "validation": {
+      "id": "9b85b83e-17a6-4a0c-9b8e-0c8fd6ea9c86",
+      "sample_id": "d27c147c-9b80-41b4-ad52-df3e5e13a7dd",
+      "corrected_count": 275,
+      "corrected_abnormal": 9,
+      "validator": "expert_01",
+      "comment": "Three cells missed near debris.",
+      "validated_at": null
+    }
+  },
+  {
+    "sample": {
+      "id": "56390f39-d517-4584-aaaf-7619dba40e81",
+      "code": "S-20261010-004",
+      "created_at": "2026-10-10T12:00:00Z",
+      "dilution_factor": 5,
+      "technician": "tech_02",
+      "status": "validated"
+    },
+    "images": [
+      {
+        "id": "img_fb08d581b5f2",
+        "sample_id": "56390f39-d517-4584-aaaf-7619dba40e81",
+        "file_path": null,
+        "quality_ok": true,
+        "rejection_reason": null,
+        "uploaded_at": "2026-10-10T12:05:00Z"
+      }
+    ],
+    "result": {
+      "id": "37d209bf-2623-4b24-8b09-760e76924a3f",
+      "image_id": "img_fb08d581b5f2",
+      "total_count": 123,
+      "abnormal_count": 12,
+      "rectangles_counted": 20,
+      "concentration": 3075.0,
+      "confidence": 0.89,
+      "cells": [
+        {
+          "x": 358,
+          "y": 272,
+          "label": "abnormal",
+          "score": 0.89
+        },
+        {
+          "x": 773,
+          "y": 285,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 137,
+          "y": 290,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 228,
+          "y": 295,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 364,
+          "y": 299,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 481,
+          "y": 295,
+          "label": "abnormal",
+          "score": 0.93
+        },
+        {
+          "x": 870,
+          "y": 299,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 525,
+          "y": 299,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 327,
+          "y": 311,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 306,
+          "y": 313,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 638,
+          "y": 315,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 545,
+          "y": 323,
+          "label": "abnormal",
+          "score": 0.68
+        },
+        {
+          "x": 367,
+          "y": 321,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 186,
+          "y": 322,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 152,
+          "y": 322,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 251,
+          "y": 326,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 402,
+          "y": 326,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 863,
+          "y": 329,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 476,
+          "y": 328,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 494,
+          "y": 329,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 659,
+          "y": 346,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 823,
+          "y": 350,
+          "label": "abnormal",
+          "score": 0.93
+        },
+        {
+          "x": 202,
+          "y": 350,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 304,
+          "y": 349,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 367,
+          "y": 351,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 849,
+          "y": 354,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 137,
+          "y": 357,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 461,
+          "y": 374,
+          "label": "abnormal",
+          "score": 0.85
+        },
+        {
+          "x": 191,
+          "y": 374,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 787,
+          "y": 378,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 391,
+          "y": 378,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 638,
+          "y": 382,
+          "label": "abnormal",
+          "score": 0.93
+        },
+        {
+          "x": 437,
+          "y": 405,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 178,
+          "y": 406,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 401,
+          "y": 413,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 678,
+          "y": 411,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 658,
+          "y": 412,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 340,
+          "y": 418,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 373,
+          "y": 420,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 463,
+          "y": 426,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 851,
+          "y": 425,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 587,
+          "y": 440,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 543,
+          "y": 442,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 375,
+          "y": 448,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 858,
+          "y": 458,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 420,
+          "y": 458,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 401,
+          "y": 460,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 717,
+          "y": 465,
+          "label": "abnormal",
+          "score": 0.9
+        },
+        {
+          "x": 151,
+          "y": 466,
+          "label": "abnormal",
+          "score": 0.75
+        },
+        {
+          "x": 574,
+          "y": 467,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 287,
+          "y": 472,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 691,
+          "y": 478,
+          "label": "abnormal",
+          "score": 0.78
+        },
+        {
+          "x": 604,
+          "y": 475,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 794,
+          "y": 478,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 836,
+          "y": 478,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 510,
+          "y": 477,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 767,
+          "y": 483,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 137,
+          "y": 492,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 491,
+          "y": 491,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 396,
+          "y": 493,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 627,
+          "y": 492,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 168,
+          "y": 499,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 858,
+          "y": 500,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 419,
+          "y": 535,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 212,
+          "y": 537,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 574,
+          "y": 539,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 643,
+          "y": 547,
+          "label": "abnormal",
+          "score": 0.86
+        },
+        {
+          "x": 330,
+          "y": 548,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 356,
+          "y": 548,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 471,
+          "y": 550,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 764,
+          "y": 550,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 557,
+          "y": 561,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 686,
+          "y": 568,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 509,
+          "y": 571,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 192,
+          "y": 575,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 864,
+          "y": 578,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 567,
+          "y": 581,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 419,
+          "y": 582,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 605,
+          "y": 585,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 162,
+          "y": 589,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 533,
+          "y": 591,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 246,
+          "y": 595,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 663,
+          "y": 600,
+          "label": "abnormal",
+          "score": 0.65
+        },
+        {
+          "x": 209,
+          "y": 597,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 269,
+          "y": 598,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 851,
+          "y": 608,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 603,
+          "y": 608,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 697,
+          "y": 615,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 539,
+          "y": 632,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 413,
+          "y": 645,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 459,
+          "y": 649,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 757,
+          "y": 648,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 232,
+          "y": 650,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 505,
+          "y": 652,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 603,
+          "y": 657,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 437,
+          "y": 663,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 175,
+          "y": 667,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 261,
+          "y": 671,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 490,
+          "y": 673,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 682,
+          "y": 673,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 762,
+          "y": 673,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 660,
+          "y": 682,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 614,
+          "y": 685,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 171,
+          "y": 689,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 587,
+          "y": 687,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 225,
+          "y": 690,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 375,
+          "y": 696,
+          "label": "abnormal",
+          "score": 0.84
+        },
+        {
+          "x": 836,
+          "y": 694,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 299,
+          "y": 699,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 477,
+          "y": 699,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 245,
+          "y": 702,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 199,
+          "y": 703,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 353,
+          "y": 703,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 763,
+          "y": 708,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 789,
+          "y": 716,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 453,
+          "y": 718,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 626,
+          "y": 724,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 823,
+          "y": 727,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 604,
+          "y": 731,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 371,
+          "y": 736,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 518,
+          "y": 738,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 206,
+          "y": 738,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 474,
+          "y": 741,
+          "label": "normal",
+          "score": 0.84
+        }
+      ],
+      "model_version": "fake-0.1"
+    },
+    "validation": {
+      "id": "d20237bc-dc3e-4ff9-86a8-7d8ed574e281",
+      "sample_id": "56390f39-d517-4584-aaaf-7619dba40e81",
+      "corrected_count": null,
+      "corrected_abnormal": null,
+      "validator": "expert_01",
+      "comment": null,
+      "validated_at": "2026-10-10T11:40:00Z"
+    }
+  },
+  {
+    "sample": {
+      "id": "05028273-5235-4a48-9c27-e43b24554be0",
+      "code": "S-20261010-005",
+      "created_at": "2026-10-10T13:00:00Z",
+      "dilution_factor": 10,
+      "technician": "tech_01",
+      "status": "validated"
+    },
+    "images": [
+      {
+        "id": "img_4b6e20401c8c",
+        "sample_id": "05028273-5235-4a48-9c27-e43b24554be0",
+        "file_path": null,
+        "quality_ok": true,
+        "rejection_reason": null,
+        "uploaded_at": "2026-10-10T13:05:00Z"
+      }
+    ],
+    "result": {
+      "id": "f2fb12b7-7907-488d-b906-93bcde371fbc",
+      "image_id": "img_4b6e20401c8c",
+      "total_count": 181,
+      "abnormal_count": 10,
+      "rectangles_counted": 20,
+      "concentration": 9050.0,
+      "confidence": 0.89,
+      "cells": [
+        {
+          "x": 366,
+          "y": 272,
+          "label": "abnormal",
+          "score": 0.92
+        },
+        {
+          "x": 174,
+          "y": 272,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 490,
+          "y": 272,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 419,
+          "y": 287,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 319,
+          "y": 287,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 219,
+          "y": 290,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 560,
+          "y": 289,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 520,
+          "y": 290,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 163,
+          "y": 293,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 710,
+          "y": 293,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 776,
+          "y": 296,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 355,
+          "y": 297,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 494,
+          "y": 299,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 677,
+          "y": 298,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 399,
+          "y": 299,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 634,
+          "y": 304,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 544,
+          "y": 309,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 749,
+          "y": 310,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 809,
+          "y": 318,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 456,
+          "y": 323,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 233,
+          "y": 322,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 213,
+          "y": 325,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 483,
+          "y": 325,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 337,
+          "y": 328,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 875,
+          "y": 332,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 409,
+          "y": 336,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 310,
+          "y": 337,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 377,
+          "y": 338,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 191,
+          "y": 341,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 693,
+          "y": 342,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 156,
+          "y": 342,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 506,
+          "y": 346,
+          "label": "abnormal",
+          "score": 0.77
+        },
+        {
+          "x": 717,
+          "y": 342,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 762,
+          "y": 350,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 842,
+          "y": 351,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 608,
+          "y": 353,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 633,
+          "y": 359,
+          "label": "abnormal",
+          "score": 0.76
+        },
+        {
+          "x": 553,
+          "y": 367,
+          "label": "abnormal",
+          "score": 0.7
+        },
+        {
+          "x": 685,
+          "y": 364,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 181,
+          "y": 364,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 587,
+          "y": 366,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 869,
+          "y": 367,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 333,
+          "y": 370,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 497,
+          "y": 372,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 354,
+          "y": 378,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 531,
+          "y": 377,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 248,
+          "y": 380,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 402,
+          "y": 405,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 202,
+          "y": 405,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 359,
+          "y": 406,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 262,
+          "y": 406,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 839,
+          "y": 408,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 758,
+          "y": 415,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 716,
+          "y": 417,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 507,
+          "y": 417,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 628,
+          "y": 420,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 378,
+          "y": 424,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 350,
+          "y": 425,
+          "label": "abnormal",
+          "score": 0.7
+        },
+        {
+          "x": 160,
+          "y": 426,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 275,
+          "y": 430,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 409,
+          "y": 434,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 324,
+          "y": 437,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 473,
+          "y": 438,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 546,
+          "y": 439,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 520,
+          "y": 440,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 680,
+          "y": 446,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 572,
+          "y": 446,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 859,
+          "y": 447,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 236,
+          "y": 448,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 788,
+          "y": 447,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 753,
+          "y": 457,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 271,
+          "y": 458,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 656,
+          "y": 461,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 365,
+          "y": 461,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 407,
+          "y": 463,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 689,
+          "y": 466,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 804,
+          "y": 468,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 246,
+          "y": 473,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 177,
+          "y": 475,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 301,
+          "y": 473,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 149,
+          "y": 478,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 494,
+          "y": 479,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 333,
+          "y": 480,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 616,
+          "y": 482,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 463,
+          "y": 483,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 872,
+          "y": 486,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 403,
+          "y": 488,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 699,
+          "y": 492,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 362,
+          "y": 493,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 437,
+          "y": 493,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 241,
+          "y": 495,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 654,
+          "y": 497,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 604,
+          "y": 512,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 863,
+          "y": 512,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 692,
+          "y": 525,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 737,
+          "y": 528,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 173,
+          "y": 528,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 566,
+          "y": 528,
+          "label": "abnormal",
+          "score": 0.87
+        },
+        {
+          "x": 422,
+          "y": 534,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 246,
+          "y": 538,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 607,
+          "y": 539,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 316,
+          "y": 540,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 378,
+          "y": 542,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 511,
+          "y": 542,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 820,
+          "y": 543,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 137,
+          "y": 548,
+          "label": "abnormal",
+          "score": 0.8
+        },
+        {
+          "x": 646,
+          "y": 552,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 715,
+          "y": 560,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 453,
+          "y": 562,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 795,
+          "y": 565,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 476,
+          "y": 570,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 333,
+          "y": 572,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 824,
+          "y": 573,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 549,
+          "y": 575,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 658,
+          "y": 576,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 193,
+          "y": 575,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 523,
+          "y": 578,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 752,
+          "y": 581,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 245,
+          "y": 583,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 618,
+          "y": 581,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 302,
+          "y": 587,
+          "label": "normal",
+          "score": 0.89
+        },
+        {
+          "x": 150,
+          "y": 589,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 499,
+          "y": 591,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 724,
+          "y": 592,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 390,
+          "y": 593,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 838,
+          "y": 592,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 183,
+          "y": 596,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 546,
+          "y": 597,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 327,
+          "y": 600,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 612,
+          "y": 606,
+          "label": "abnormal",
+          "score": 0.77
+        },
+        {
+          "x": 669,
+          "y": 611,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 224,
+          "y": 610,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 472,
+          "y": 612,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 508,
+          "y": 611,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 269,
+          "y": 618,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 698,
+          "y": 617,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 860,
+          "y": 617,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 533,
+          "y": 618,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 235,
+          "y": 645,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 491,
+          "y": 645,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 860,
+          "y": 648,
+          "label": "normal",
+          "score": 0.85
+        },
+        {
+          "x": 186,
+          "y": 648,
+          "label": "normal",
+          "score": 0.88
+        },
+        {
+          "x": 809,
+          "y": 651,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 326,
+          "y": 653,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 359,
+          "y": 657,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 587,
+          "y": 660,
+          "label": "normal",
+          "score": 0.94
+        },
+        {
+          "x": 405,
+          "y": 661,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 764,
+          "y": 662,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 621,
+          "y": 666,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 678,
+          "y": 669,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 462,
+          "y": 668,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 153,
+          "y": 669,
+          "label": "abnormal",
+          "score": 0.66
+        },
+        {
+          "x": 527,
+          "y": 673,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 272,
+          "y": 675,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 498,
+          "y": 679,
+          "label": "normal",
+          "score": 0.83
+        },
+        {
+          "x": 355,
+          "y": 678,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 558,
+          "y": 681,
+          "label": "normal",
+          "score": 0.87
+        },
+        {
+          "x": 378,
+          "y": 682,
+          "label": "normal",
+          "score": 0.81
+        },
+        {
+          "x": 758,
+          "y": 682,
+          "label": "normal",
+          "score": 0.95
+        },
+        {
+          "x": 867,
+          "y": 687,
+          "label": "abnormal",
+          "score": 0.8
+        },
+        {
+          "x": 651,
+          "y": 690,
+          "label": "normal",
+          "score": 0.97
+        },
+        {
+          "x": 422,
+          "y": 696,
+          "label": "normal",
+          "score": 0.84
+        },
+        {
+          "x": 460,
+          "y": 700,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 177,
+          "y": 704,
+          "label": "normal",
+          "score": 0.9
+        },
+        {
+          "x": 547,
+          "y": 706,
+          "label": "normal",
+          "score": 0.99
+        },
+        {
+          "x": 238,
+          "y": 706,
+          "label": "normal",
+          "score": 0.92
+        },
+        {
+          "x": 326,
+          "y": 718,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 348,
+          "y": 719,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 368,
+          "y": 717,
+          "label": "normal",
+          "score": 0.91
+        },
+        {
+          "x": 623,
+          "y": 719,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 489,
+          "y": 718,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 681,
+          "y": 725,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 652,
+          "y": 726,
+          "label": "normal",
+          "score": 0.82
+        },
+        {
+          "x": 716,
+          "y": 727,
+          "label": "normal",
+          "score": 0.86
+        },
+        {
+          "x": 468,
+          "y": 728,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 842,
+          "y": 729,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 159,
+          "y": 730,
+          "label": "normal",
+          "score": 0.93
+        },
+        {
+          "x": 388,
+          "y": 733,
+          "label": "normal",
+          "score": 0.98
+        },
+        {
+          "x": 601,
+          "y": 733,
+          "label": "normal",
+          "score": 0.8
+        },
+        {
+          "x": 542,
+          "y": 739,
+          "label": "normal",
+          "score": 0.96
+        },
+        {
+          "x": 412,
+          "y": 739,
+          "label": "normal",
+          "score": 0.98
+        }
+      ],
+      "model_version": "fake-0.1"
+    },
+    "validation": {
+      "id": "5c0aefa7-41c4-41ff-ac3e-c42227589b54",
+      "sample_id": "05028273-5235-4a48-9c27-e43b24554be0",
+      "corrected_count": 179,
+      "corrected_abnormal": 10,
+      "validator": "expert_01",
+      "comment": "Two artefacts counted as cells.",
+      "validated_at": "2026-10-10T12:05:00Z"
+    }
+  }
+]
