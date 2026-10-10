@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# .NET
+bin/
+obj/
+*.user
+
+# Node / dashboard
+node_modules/
+dist/
+
+# Model weights and datasets: never commit large or third-party data
+*.pt
+*.pth
+*.onnx
+datasets/
+runs/
+
+# Local secrets
+.env
+*.env.local
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
