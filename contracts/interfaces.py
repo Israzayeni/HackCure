@@ -147,3 +147,30 @@ def compute_result(cells: list[ClassifiedCell], rectangles: list[Rectangle], dil
     and each cell is counted at most once.
     """
     raise NotImplementedError
+
+
+# ---------------------------------------------------------------------------------------------
+# Shared crop helpers. Implemented in ai/common/crop.py, listed here so every stage sees the same
+# signatures. `cell` is a Detection; `labels[i]` is the {"label": ...} of `cells[i]` (order-aligned,
+# since detections have no id field; a cell's id is its index).
+#
+# NOTE: classify_cell's contract input is still the exact box crop image[y:y+h, x:x+w]. Switching
+# it to crop_cell() output is an open question (PROPOSED, see README "Fake data for M3") and needs
+# a contract PR.
+# ---------------------------------------------------------------------------------------------
+
+def crop_cell(image: np.ndarray, cell: Detection, margin: float = 0.25, size: int = 224) -> np.ndarray:
+    """Square crop centred on the cell's box, side = max(w, h) * (1 + 2 * margin), replicate-padded
+    at image edges, resized to (size, size, 3) RGB uint8."""
+    raise NotImplementedError
+
+
+def export_crops(image: np.ndarray, cells: list[Detection], labels: list[dict], out_dir: str) -> str:
+    """Save crop_cell() of every cell to out_dir/<label>/cell_<id:04d>.png (ImageFolder layout) and
+    write out_dir/labels.csv (crop_path, cell_id, label, x, y, w, h). Returns the labels.csv path."""
+    raise NotImplementedError
+
+
+def draw_labeled_overlay(image: np.ndarray, cells: list[Detection], labels: list[dict]) -> np.ndarray:
+    """Copy of the image with every box drawn: green = normal, red = abnormal."""
+    raise NotImplementedError

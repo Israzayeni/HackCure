@@ -13,11 +13,14 @@ Checks:
   reproduces <name>.result.json;
 - samples.json covers every status, and each record is consistent with its status and dilution;
 - rejection_examples.json has exactly one example per rejection reason;
+- fake_cells (M3): one label per detection, every crop in fakes/crops/labels.csv exists and is
+  224x224 RGB, and the counts per class match fake_cells.labels.json;
 - the mock inference server (if FastAPI is installed) answers with contract-shaped bodies.
 """
 
 from __future__ import annotations
 
+import csv
 import json
 import math
 import sys
@@ -26,6 +29,7 @@ from collections import Counter
 from pathlib import Path
 
 from jsonschema import Draft202012Validator, FormatChecker
+from PIL import Image
 from referencing import Registry, Resource
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -201,6 +205,50 @@ reasons = Counter(r.get("reason") for r in rejections)
 check(reasons == Counter({"blurry": 1, "too_dark": 1, "overexposed": 1}), f"one example per rejection reason {dict(reasons)}")
 for img in ("malassez_blurry.png", "malassez_dark.png"):
     check((ROOT / "fakes" / "images" / img).exists(), f"quality test image {img} exists")
+
+# ---------------------------------------------------------------- M3 classification fakes
+section("fakes: fake_cells (M3 crops)")
+CROP_SIZE = 224   # PROPOSED crop size, see README "Fake data for M3"
+crops_dir = ROOT / "fakes" / "crops"
+fc_dets = load(FAKE_JSON / "fake_cells.detections.json")
+fc_labels = load(FAKE_JSON / "fake_cells.labels.json")
+for img in ("fake_cells.png", "fake_cells_overlay.png"):
+    check((ROOT / "fakes" / "images" / img).exists(), f"{img} exists")
+if validate(fc_dets, "detections.schema.json", "fake_cells.detections.json"):
+    fc_image = load_image(ROOT / "fakes" / "images" / "fake_cells.png")
+    H, W = fc_image.shape[:2]
+    check(all(d["x"] + d["w"] <= W and d["y"] + d["h"] <= H for d in fc_dets), "fake_cells: detections inside image")
+# detections have no id field (contract), so cell id = index and labels are matched by order
+check(isinstance(fc_labels, list) and all(isinstance(lab, dict) and set(lab) == {"label"} and
+                                          lab["label"] in ("normal", "abnormal") for lab in fc_labels),
+      "fake_cells.labels.json: list of {'label': 'normal' | 'abnormal'}")
+check(len(fc_labels) == len(fc_dets), f"every detection has exactly one label ({len(fc_labels)} labels, {len(fc_dets)} detections)")
+
+with open(crops_dir / "labels.csv", newline="", encoding="utf-8") as f:
+    rows = list(csv.DictReader(f))
+check(rows and list(rows[0]) == ["crop_path", "cell_id", "label", "x", "y", "w", "h"], "labels.csv columns")
+check(sorted(int(r["cell_id"]) for r in rows) == list(range(len(fc_dets))), "labels.csv has one row per detection id")
+check(all(r["label"] == fc_labels[int(r["cell_id"])]["label"] for r in rows), "labels.csv labels match fake_cells.labels.json")
+check(all({k: int(r[k]) for k in "xywh"} == {k: fc_dets[int(r["cell_id"])][k] for k in "xywh"} for r in rows),
+      "labels.csv boxes match fake_cells.detections.json")
+check(all(r["crop_path"] == f"{r['label']}/cell_{int(r['cell_id']):04d}.png" for r in rows),
+      "crop paths follow <label>/cell_<id:04d>.png")
+missing = [r["crop_path"] for r in rows if not (crops_dir / r["crop_path"]).exists()]
+check(not missing, f"every crop in labels.csv exists (missing: {missing[:3]})")
+bad = []
+for r in rows:
+    p = crops_dir / r["crop_path"]
+    if p.exists():
+        with Image.open(p) as im:
+            if im.size != (CROP_SIZE, CROP_SIZE) or im.mode != "RGB":
+                bad.append(f"{r['crop_path']} {im.size} {im.mode}")
+check(not bad, f"every crop is {CROP_SIZE}x{CROP_SIZE} RGB (bad: {bad[:3]})")
+expected = Counter(lab["label"] for lab in fc_labels)
+on_disk = Counter({lab: len(list((crops_dir / lab).glob("*.png"))) for lab in ("normal", "abnormal")})
+check(on_disk == expected == Counter(r["label"] for r in rows),
+      f"counts per class match labels.json ({dict(expected)}; on disk {dict(on_disk)})")
+check({p.name for p in crops_dir.iterdir() if p.is_dir()} == {"normal", "abnormal"},
+      "fakes/crops has exactly the class folders normal/ and abnormal/ (ImageFolder layout)")
 
 # ---------------------------------------------------------------- mock inference server
 section("fakes: mock_inference responses")
