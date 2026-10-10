@@ -12,7 +12,8 @@ Checks:
   the result's cells are detection centres with the matching labels, and fakes.stubs.fake_analyze
   reproduces <name>.result.json;
 - samples.json covers every status, and each record is consistent with its status and dilution;
-- rejection_examples.json has exactly one example per rejection reason.
+- rejection_examples.json has exactly one example per rejection reason;
+- the mock inference server (if FastAPI is installed) answers with contract-shaped bodies.
 """
 
 from __future__ import annotations
@@ -200,6 +201,31 @@ reasons = Counter(r.get("reason") for r in rejections)
 check(reasons == Counter({"blurry": 1, "too_dark": 1, "overexposed": 1}), f"one example per rejection reason {dict(reasons)}")
 for img in ("malassez_blurry.png", "malassez_dark.png"):
     check((ROOT / "fakes" / "images" / img).exists(), f"quality test image {img} exists")
+
+# ---------------------------------------------------------------- mock inference server
+section("fakes: mock_inference responses")
+try:
+    from fastapi.testclient import TestClient
+except ImportError:
+    print("  SKIP (pip install -r fakes/mock_inference/requirements.txt to check the mock)")
+else:
+    sys.path.insert(0, str(ROOT / "fakes" / "mock_inference"))
+    from app import app  # noqa: E402
+
+    client = TestClient(app)
+    validate(client.get("/health").json(), "health.schema.json", "GET /health")
+    for upload in ("malassez_01.png", "malassez_blurry.png", "malassez_dark.png", "other.png"):
+        r = client.post("/images", files={"file": (upload, b"fake", "image/png")})
+        validate(r.json(), "post_images_response.schema.json", f"POST /images ({upload})")
+    for name in IMAGES:
+        r = client.post(f"/analyze/img_{name}", json={"dilution_factor": 2.5})
+        if validate(r.json(), "result.schema.json", f"POST /analyze/img_{name}"):
+            check_result(r.json(), f"POST /analyze/img_{name} (dilution 2.5)")
+    for path, body, status in (("/analyze/nope", {"dilution_factor": 10}, 404),
+                               ("/analyze/img_malassez_01", {}, 422)):
+        r = client.post(path, json=body)
+        check(r.status_code == status, f"POST {path} -> {status} (got {r.status_code})")
+        validate(r.json(), "error.schema.json", f"POST {path} error body")
 
 # ---------------------------------------------------------------- summary
 section(None)
