@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/detections.schema.json",
+  "title": "Detections",
+  "description": "Output of detect_cells(): every cell detected anywhere in the image, before the border rule.",
+  "type": "array",
+  "items": {
+    "$ref": "detection.schema.json"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/detection.schema.json",
+  "title": "Detection",
+  "description": "One detected cell: axis-aligned bounding box (top-left x, y, width w, height h) in preprocessed-image pixels, plus the detector confidence.",
+  "type": "object",
+  "required": [
+    "x",
+    "y",
+    "w",
+    "h",
+    "score"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "x": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "y": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "w": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "h": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  }
+}

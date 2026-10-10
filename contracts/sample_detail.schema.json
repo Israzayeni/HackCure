@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/sample_detail.schema.json",
+  "title": "SampleDetail",
+  "description": "A sample with its images, latest analysis result and validation. Returned by POST /samples/{id}/result, PATCH /samples/{id}/correct and POST /samples/{id}/validate, and by GET /samples/{id}, which is not in the spec (PROPOSED — confirm with team). fakes/json/samples.json is an array of these.",
+  "type": "object",
+  "required": [
+    "sample",
+    "images",
+    "result",
+    "validation"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "sample": {
+      "$ref": "sample.schema.json"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "$ref": "image_record.schema.json"
+      }
+    },
+    "result": {
+      "anyOf": [
+        {
+          "$ref": "analysis_result_record.schema.json"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "validation": {
+      "anyOf": [
+        {
+          "$ref": "validation.schema.json"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  }
+}

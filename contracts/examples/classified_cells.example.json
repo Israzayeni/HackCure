@@ -1,0 +1,93 @@
+[
+  {
+    "detection": {
+      "x": 150,
+      "y": 280,
+      "w": 16,
+      "h": 16,
+      "score": 0.97
+    },
+    "classification": {
+      "label": "normal",
+      "score": 0.94
+    }
+  },
+  {
+    "detection": {
+      "x": 200,
+      "y": 300,
+      "w": 17,
+      "h": 17,
+      "score": 0.95
+    },
+    "classification": {
+      "label": "normal",
+      "score": 0.91
+    }
+  },
+  {
+    "detection": {
+      "x": 240,
+      "y": 350,
+      "w": 16,
+      "h": 16,
+      "score": 0.93
+    },
+    "classification": {
+      "label": "normal",
+      "score": 0.88
+    }
+  },
+  {
+    "detection": {
+      "x": 300,
+      "y": 290,
+      "w": 22,
+      "h": 12,
+      "score": 0.89
+    },
+    "classification": {
+      "label": "abnormal",
+      "score": 0.82
+    }
+  },
+  {
+    "detection": {
+      "x": 330,
+      "y": 330,
+      "w": 16,
+      "h": 16,
+      "score": 0.96
+    },
+    "classification": {
+      "label": "normal",
+      "score": 0.97
+    }
+  },
+  {
+    "detection": {
+      "x": 290,
+      "y": 360,
+      "w": 16,
+      "h": 16,
+      "score": 0.92
+    },
+    "classification": {
+      "label": "normal",
+      "score": 0.9
+    }
+  },
+  {
+    "detection": {
+      "x": 400,
+      "y": 384,
+      "w": 16,
+      "h": 16,
+      "score": 0.9
+    },
+    "classification": {
+      "label": "normal",
+      "score": 0.93
+    }
+  }
+]

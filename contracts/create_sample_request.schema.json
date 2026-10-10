@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/create_sample_request.schema.json",
+  "title": "CreateSampleRequest",
+  "description": "Body of cases POST /samples. The server sets id, code, created_at and status (= pending).",
+  "type": "object",
+  "required": [
+    "dilution_factor",
+    "technician"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "dilution_factor": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "technician": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

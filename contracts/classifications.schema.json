@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/classifications.schema.json",
+  "title": "Classifications",
+  "description": "One classify_cell() result per detection, in the same order as the detections array (PROPOSED — confirm with team).",
+  "type": "array",
+  "items": {
+    "$ref": "classification.schema.json"
+  }
+}

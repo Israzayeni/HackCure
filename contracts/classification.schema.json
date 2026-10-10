@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/classification.schema.json",
+  "title": "Classification",
+  "description": "Output of classify_cell() for one crop. 'abnormal' is a flag for expert review, not a diagnosis. score = probability of the returned label (PROPOSED — confirm with team).",
+  "type": "object",
+  "required": [
+    "label",
+    "score"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "label": {
+      "enum": [
+        "normal",
+        "abnormal"
+      ]
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  }
+}

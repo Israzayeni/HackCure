@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Israzayeni/HackCure/contracts/validation.schema.json",
+  "title": "Validation",
+  "description": "A row of the validations table: one row per sample, upserted. PATCH /correct fills corrected_* with validated_at = null; POST /validate sets validated_at. corrected_* stay null when the expert validates the AI result unchanged (PROPOSED — confirm with team).",
+  "type": "object",
+  "required": [
+    "id",
+    "sample_id",
+    "corrected_count",
+    "corrected_abnormal",
+    "validator",
+    "comment",
+    "validated_at"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "sample_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "corrected_count": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "corrected_abnormal": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "validator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "comment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "validated_at": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  }
+}
