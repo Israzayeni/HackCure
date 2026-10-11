@@ -16,7 +16,6 @@ node_modules/
 dist/
 
 # Model weights and datasets: never commit large or third-party data
-*.pt
 *.pth
 *.onnx
 datasets/
