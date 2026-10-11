@@ -13,9 +13,12 @@ Schema: [`contracts/classification.schema.json`](../../contracts/classification.
 | File | What |
 |---|---|
 | `transforms.py` | Preprocessing shared by training and inference; folder name → label map (`FOLDER_TO_LABEL`) |
-| `model.py` | Builds ResNet18 / EfficientNet-B0 with a 2-class head; checkpoint save/load |
-| `train.py` | Fine-tunes on an ImageFolder dataset; saves `best.pt` (best val F1 on abnormal) and `last.pt` every epoch |
-| `evaluate.py` | Accuracy, F1, precision, recall, confusion matrix on a held-out split → `metrics.json` |
+| `model.py` | Builds ResNet18/34, EfficientNet-B0 or MobileNetV3 with a 2-class head; layer freezing; checkpoint save/load |
+| `train.py` | Fine-tunes on an ImageFolder dataset; saves `best.pt` (best val `--select-metric`), `last.pt`, `history.json`, `curves.png`, `summary.json` |
+| `metrics.py` | Per-class precision / recall / F1, macro F1, ROC-AUC, confusion matrix (shared by train and evaluate) |
+| `experiments.py` | Runs the comparison grid and writes `comparison.md` / `.csv` on the validation split |
+| `check_splits.py` | Finds exact and flipped/rotated copies shared between train, valid and test |
+| `evaluate.py` | Metrics on a held-out split → `metrics.json`; `--sweep` lists thresholds (validation only) |
 | `classifier.py` | `classify_cell(crop)` for the pipeline, plus the batch helper `classify_cells(crops)` |
 | `tests/` | Contract tests with an untrained model: `python -m pytest ai/classification/tests` |
 
@@ -41,6 +44,16 @@ Choose the checkpoint on `valid` (done automatically), then report the final num
 !python /content/m3/evaluate.py --weights /content/drive/MyDrive/hackcure/best.pt \
     --data /content/Leukemia-Cells-1/test --out /content/drive/MyDrive/hackcure/metrics.json
 ```
+
+### Experiments
+
+```python
+!python /content/m3/check_splits.py --data /content/Leukemia-Cells-1          # leaks between splits?
+!python /content/m3/experiments.py --data /content/Leukemia-Cells-1 --out /content/drive/MyDrive/hackcure/exp
+```
+
+All experiments pick `best.pt` on validation F1 macro. Choose the experiment in `comparison.md`, then its
+threshold with `evaluate.py --data .../valid --sweep`, then evaluate that one model once on `test`.
 
 Copy `best.pt` to `ai/classification/weights/best.pt` (gitignored, never committed) and `metrics.json` to
 `ai/classification/metrics.json`.

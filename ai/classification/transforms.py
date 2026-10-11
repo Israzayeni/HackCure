@@ -21,11 +21,32 @@ FOLDER_TO_LABEL = {
 }
 
 
-def train_transform(size: int = IMG_SIZE) -> T.Compose:
-    """Augmentations aimed at the domain gap: training images are stained smears, Malassez
+AUGMENTATIONS = ("strong", "moderate", "none")
+
+
+def train_transform(size: int = IMG_SIZE, aug: str = "strong") -> T.Compose:
+    """"strong" (default) is aimed at the domain gap: training images are stained smears, Malassez
     images are unstained, so colour is randomized or removed. Cells look the same at any
     orientation, so flips and rotations are safe. RandomResizedCrop varies the framing, so
-    crops from crop_cell (cell ~2/3 of the width) do not surprise the model."""
+    crops from crop_cell (cell ~2/3 of the width) do not surprise the model.
+
+    "moderate" keeps the stain colours and changes the geometry less. It may score higher on
+    Leukemia-Cells, whose test split is stained too, while generalizing worse to unstained
+    Malassez images. "none" is the eval preprocessing, for comparison."""
+    if aug == "none":
+        return eval_transform(size)
+    if aug == "moderate":
+        return T.Compose([
+            T.RandomResizedCrop(size, scale=(0.8, 1.0), ratio=(0.9, 1.1)),
+            T.RandomHorizontalFlip(),
+            T.RandomVerticalFlip(),
+            T.RandomRotation(30),
+            T.ColorJitter(brightness=0.15, contrast=0.15, saturation=0.1, hue=0.02),
+            T.ToTensor(),
+            T.Normalize(MEAN, STD),
+        ])
+    if aug != "strong":
+        raise ValueError(f"unknown aug {aug!r}")
     return T.Compose([
         T.RandomResizedCrop(size, scale=(0.6, 1.0), ratio=(0.9, 1.1)),
         T.RandomHorizontalFlip(),

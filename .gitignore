@@ -17,6 +17,7 @@ dist/
 
 # Model weights and datasets: never commit large or third-party data
 *.pth
+*.pt
 *.onnx
 datasets/
 runs/
